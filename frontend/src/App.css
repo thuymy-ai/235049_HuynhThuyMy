@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f7;
+  color: #222;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #174ea6;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 70px;
+}
+
+button {
+  padding: 9px 13px;
+  margin: 5px 4px 5px 0;
+  border: none;
+  border-radius: 5px;
+  background: #1769aa;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.actions {
+  margin-top: 15px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.search input {
+  flex: 1;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #e8eef7;
+}
+
+.message {
+  padding: 10px;
+  background: #eef5ff;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .search {
+    flex-wrap: wrap;
+  }
+
+  .search input {
+    flex-basis: 100%;
+  }
+}
